@@ -1,8 +1,13 @@
 {
-  "name": "public",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "///////////////////////////////////Portfolio///////////////////////////////////////////////////////////",
-  "main": "eslintrc.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,15 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/sarkis74/portfolio.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sarkis74/portfolio/issues"
   },
-  "homepage": "https://github.com/sarkis74/portfolio#readme",
-  "dependencies": {
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4"
-  }
+  "homepage": "https://github.com/sarkis74/portfolio#readme"
 }
