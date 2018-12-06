@@ -12,7 +12,7 @@ const app = express();
 //PORT
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(' ./public'));
+app.use(express.static('./public'));
 
 app.get('/hello', (request, response) => {
     response.status(200).send('hello');

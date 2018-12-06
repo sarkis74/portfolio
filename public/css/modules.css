@@ -1,0 +1,178 @@
+/* a Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. */
+
+/*/////////////////MINOR COMPONENTS///////////////////////////*/
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+} 
+
+strong, b {
+    font-weight: 300;
+    color: #666;
+} 
+
+em, i {
+    font-style: italic;
+}
+
+sub {
+    position: relative;
+    top: 0.5em;
+    font-size: 0.8em;
+}
+
+sup {
+    position: relative;
+    top: -0.5em;
+    font-size: 0.8em;
+}
+
+hr {
+    border: 0;
+    border-top: solid 1px #ddd;
+}
+
+blockquote {
+    border-left: solid 0.5em #ddd;
+    padding: 1em 0 1em 2em;
+    font-style: italic;
+}
+
+br.clear {
+    clear: both;
+}
+
+
+/*Image Carousel*/
+
+.carousel-wrapper{
+    height:400px;
+    position:relative;
+    width:800px;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  
+/*Image Carousel*/
+/*From CSS Tricks*/
+
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('images/seattle\ corner.jpg');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('images/space\ needle.jpg');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('images/pikes\ place.jpg');
+     background-size:cover;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+    .carousel-wrapper h2 {
+        
+        color: black;
+        margin-top: 55%;
+        font-size: 100%;
+    }
+
+
+/*Video Clip*/
+/*From CSS Tricks*/
+  
+video {
+    position: absolute;
+    width: 90%; 
+    height: 80%;
+    margin-top: -10%;  
+    margin-left: -45%;
+    opacity: 0.9;
+    z-index: -1;
+    }
+
+.film-content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    width: 80%;
+    padding: 20px;
+    z-index: 0;
+}
+
+
+   
+
+  
+  
+
