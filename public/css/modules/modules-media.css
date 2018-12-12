@@ -109,20 +109,33 @@ br.clear {
 
 .carousel {
   position:relative;
-  width:400px;
-  border:10px solid white;
+  width: 650px;
+  height: 100%;
+  border:20px solid white;
   margin:20px auto;
   box-shadow:0px 0px 40px #000;
+  text-align: center;
+  line-height: 5000%;
 }
 .carousel > img {
   display:none;
   width:100%;
 }
+
+.carousel > p {
+  display:none;
+  width:100%;
+}
+
 .carousel > input {
   position:absolute;
   left:-9999px;
 }
 .carousel > input:checked + label + img {
+  display:block;
+}
+
+.carousel > input:checked + label + p {
   display:block;
 }
 
@@ -146,7 +159,8 @@ br.clear {
   height:100%;
   visibility:hidden;
 }
-.carousel > label:before {
+
+.carousel > label:before { 
   content:'';
   display:block;
   position:absolute;
