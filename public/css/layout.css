@@ -129,6 +129,14 @@ p, ul, ol, dl, table {
     width: 1400px;
 }
 
+.container header {
+    z-index: 0;
+}
+
+#header {
+    z-index: 1;
+}
+
     @media screen and (min-width: 961px) and (max-width: 1880px) {
 
         .container {
@@ -163,7 +171,8 @@ p, ul, ol, dl, table {
 
 	section, article {
         margin-bottom: 3em;
-        margin-left: 50%;
+        margin-left: 75%;
+        z-index: 0;
 	}
 
 		section > :last-child,
@@ -331,7 +340,7 @@ input[type="reset"],
 button,
 .button {
     position: relative;
-    margin: 10% 0;
+    margin: 15% 0;
     display: inline-block;
     border-radius: 0.35em;
     color: #fff !important;
